@@ -1,0 +1,28 @@
+{
+  "name": "arjans-recipes-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf -rf build/*",
+    "prebuild": "rimraf -rf build/*",
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch",
+    "start": "node ./build/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.4",
+    "@types/fs-extra": "^8.1.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs-extra": "^9.0.0"
+  }
+}
